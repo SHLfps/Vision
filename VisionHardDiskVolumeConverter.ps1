@@ -1,12 +1,5 @@
 Clear-Host
-
-Write-Host @"
-  ██████╗ ███████╗██████╗     ██╗      ██████╗ ████████╗██╗   ██╗███████╗         
-  ██╔══██╗██╔════╝██╔══██╗    ██║     ██╔═══██╗╚══██╔══╝██║   ██║██╔════╝         
-  ██████╔╝█████╗  ██║  ██║    ██║     ██║   ██║   ██║   ██║   ██║███████╗         
-  ██╔══██╗██╔══╝  ██║  ██║    ██║     ██║   ██║   ██║   ██║   ██║╚════██║         
-  ██║  ██║███████╗██████╔╝    ███████╗╚██████╔╝   ██║   ╚██████╔╝███████║         
-  ╚═╝  ╚═╝╚══════╝╚═════╝     ╚══════╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝         
+    
 "@ -ForegroundColor White
 Write-Host ""
 Write-Host "  HardDiskVolume Converter Made by shl - " -ForegroundColor Blue -NoNewline
@@ -20,7 +13,7 @@ if (!(Test-Admin)) {
     Exit
 }
 
-$pathsFilePath = "paths.txt"
+$pathsFilePath = "fb3-antipiracyapps.txt"
 if(-Not(Test-Path -Path $pathsFilePath)){
     Write-Warning "The file $pathsFilePath does not exist."
     Start-Sleep 10
@@ -46,7 +39,7 @@ $Kernel32 = $TypeBuilder.CreateType()
 $Max = 65536
 $StringBuilder = New-Object System.Text.StringBuilder($Max)
 
-$filePath = "paths.txt"
+$filePath = "fb3-antipiracyapps.txt"
 $content = Get-Content $filePath
 
 $driveMappings = Get-WmiObject Win32_Volume | Where-Object { $_.DriveLetter } | ForEach-Object {

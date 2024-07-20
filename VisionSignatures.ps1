@@ -1,7 +1,5 @@
 Clear-Host
 
-Write-Host @"
-
 "@ -ForegroundColor White
 Write-Host ""
 Write-Host "  Made by shl - " -ForegroundColor Blue -NoNewline
