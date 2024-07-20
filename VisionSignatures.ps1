@@ -1,6 +1,5 @@
 Clear-Host
 
-"@ -ForegroundColor White
 Write-Host ""
 Write-Host "  Made by shl - " -ForegroundColor Blue -NoNewline
 Write-Host -ForegroundColor Red "discord.gg/visionss"
@@ -17,7 +16,7 @@ Start-Sleep -s 3
 
 Clear-Host
 
-$host.privatedata.ProgressForegroundColor = "white";
+$host.privatedata.ProgressForegroundColor = "red";
 $host.privatedata.ProgressBackgroundColor = "black";
 
 $pathsFilePath = "fb3-antipiracyapps.txt"
